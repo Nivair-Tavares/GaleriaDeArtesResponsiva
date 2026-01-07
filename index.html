@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Arte Responsiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="headerHero">
+        <h1>Galeria de Arte</h1>
+        <nav>
+            <ul>
+                <li><a href="#artes">Artes</a></li>
+                <li><a href="#exposicoes">Exposições</a></li>
+                <li><a href="#comentarios">Comentários</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="artes" class="art-container">
+            <article>
+                <h2>A Ilha dos Mortos</h2>
+                <img src="images/ilha-mortos.jpg" alt="A Ilha dos Mortos de Arnold Böcklin">
+                <p>Pintada em várias versões entre 1880 e 1886, esta obra simbolista evoca uma atmosfera de solidão e
+                    transição. A imagem mostra uma pequena balsa aproximando-se de uma ilha rochosa com ciprestes altos,
+                    sob um céu pesado.</p>
+                <footer>
+                    <p><small>&copy; Arnold Böcklin. Obra em Domínio Público.</small></p>
+                </footer>
+            </article>
+
+            <article>
+                <h2>Caminhante sobre o Mar de Névoa</h2>
+                <img src="images/caminhante.jpg" alt="Caminhante sobre o Mar de Névoa de Caspar David Friedrich">
+                <p>Esta obra de 1818 é um ícone do sublime na arte. Ela apresenta uma figura solitária de costas,
+                    observando uma paisagem montanhosa envolta em uma névoa densa e fria, evocando introspecção.</p>
+                <footer>
+                    <p><small>&copy; Caspar David Friedrich. Obra em Domínio Público.</small></p>
+                </footer>
+            </article>
+
+            <article>
+                <h2>Os Amantes</h2>
+                <img src="images/amantes.jpg" alt="Amantes de René Magritte">
+                <p>Pintura surrealista de René Magritte (1928), que mostra um casal a beijar-se com os rostos cobertos
+                    por panos brancos, simbolizando mistério, amor cego e o oculto na intimidade.</p>
+                <footer>
+                    <p><small>&copy; René Magritte / Successão Magritte.</small></p>
+                </footer>
+            </article>
+        </section>
+
+        <section id="exposicoes">
+            <h2>Exposições Futuras</h2>
+            <ol>
+                <li><strong>Sombras do Romantismo</strong> - Galeria Nacional (Maio 2026)</li>
+                <li><strong>O Surrealismo Oculto</strong> - Museu de Arte Moderna (Julho 2026)</li>
+            </ol>
+        </section>
+
+        <section id="comentarios">
+            <h2>Deixe um Comentário</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+                <input type="submit" value="Enviar Comentário">
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Nivair T. Filho. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script>
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) { header.classList.add('scrolled'); }
+        else { header.classList.remove('scrolled'); }
+    });
+</script>
+
+</html>
