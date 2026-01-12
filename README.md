@@ -6,7 +6,7 @@ A semantic web page project developed to showcase a gallery of art using modern 
 
 • Core Technical Focus
 
-Semantic HTML: Built with a clean hierarchy using <header>, <main>, <article>, and <footer> tags.
+Semantic HTML: Built with a clean hierarchy using "< header >", "< main >", "< article >", and "< footer >" tags.
 
 Flexbox Layout: Uses a dynamic .art-container with display: flex and flex-wrap for organized content.
 
