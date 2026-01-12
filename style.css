@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
 
-/* Variáveis CSS (Secção 3) */
+/* Variáveis CSS */
 
 :root {
     --main-color: #3b3b3b;
@@ -98,10 +98,11 @@ header.scrolled {
     color: white;
 }
 
-/* Container Flexbox (Secção 3) */
+/* Container Flexbox */
 
 .art-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -111,7 +112,8 @@ header.scrolled {
 }
 
 .art-container>article {
-    max-width: 500px;
+    flex: 1 1 300px;
+    max-width: 400px;
     text-align: center;
     background-color: rgba(46, 46, 46, 0.226);
     color: rgb(255, 255, 255);
@@ -147,7 +149,7 @@ header.scrolled {
     color: white;
     text-align: center;
     background: linear-gradient(to right, transparent, black, transparent);
-    padding: 1rem;
+    padding: 1vw;
     margin-top: 1rem;
     width: 100%;
     margin: 2rem;
@@ -287,7 +289,7 @@ header.scrolled {
     letter-spacing: 1px;
 }
 
-/* --- MEDIA QUERIES (Secção 4) --- */
+/*  MEDIA QUERIES  */
 
 @media (width < 1600px) {
     .art-container {
@@ -381,4 +383,8 @@ header.scrolled {
     body {
         font-size: 1.1rem;
     }
+}
+
+@media (orientation: landscape) {
+    header { background-color: rgba(0, 0, 0, 0.3); }
 }
